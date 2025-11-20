@@ -15,7 +15,9 @@
     <!-- HEADER / HERO SECTION -->
     <header class="hero">
         <nav class="navbar">
-            <ul>
+            <div class="logo">OLADAPO</div>
+            <div class="menu-icon" id="menu-icon">☰</div>
+            <ul class="nav-links">
                 <li><a href="#about">About me</a></li>
                 <li><a href="#skills">My skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -128,13 +130,24 @@
             </div>
         </div>
     </section>
-    <div class="contact"> <i class="bi bi-whatsapp"></i></div>
+    <!-- <div class="contact"> <i class="bi bi-whatsapp"></i></div> -->
 
     <footer>
         <p>Copyright © 2025 David Oladapo</p>
     </footer>
 
     <a href="#" class="back-to-top">▲</a>
+    <script>
+        const menuIcon = 
+        document.getElementById("menu-icon");
+        const navLinks = 
+        document.getElementById("nav-links");
+        
+        menuIcon.onclick = () => {
+            navLinks.classList.toggle('active');
+        };
+
+    </script>
 
 </body>
 
