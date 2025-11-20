@@ -126,9 +126,9 @@ body {
 }
 
 /* CONTACTS */
-<<<<<<< HEAD
-
-====
+.contact{
+    background-color: white;
+}
 .contact h2 {
     color: skyblue;
 }
