@@ -14,11 +14,18 @@ body {
 /* NAVBAR */
 .navbar {
     width: 100%;
-    padding: 20px;
+    padding:15px 30px;
     position: absolute;
     top: 0;
     right: 0;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .navbar ul {
@@ -34,6 +41,11 @@ body {
     text-decoration: none;
     color: skyblue;
     font-weight: 500;
+}
+.menu-icon{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 /* HERO SECTION */
@@ -239,21 +251,36 @@ h1 {
 
 }
 
+
 /* =============================== */
 /* 📱 MOBILE RESPONSIVE SECTION   */
 /* =============================== */
 @media (max-width: 768px) {
 
     /* NAVBAR */
-    .navbar {
+    .nav-links {
+        position: absolute;
         text-align: center;
         background: rgba(0, 0, 0, 0.4);
-        padding: 15px 0;
+        padding: 20px ;
+        top: 70px;
+        right: -100%;
+        width: 200px;
+        flex-direction: column;
+        gap: 20px;
+        transition: 0.3s ease;
+
     }
 
-    .navbar ul li {
+    .nav-links.active {
+        right: 10px;
+    }
+    .menu-icon{
         display: block;
-        margin: 10px 0;
+
+    }
+    .nav-links li{
+        text-align: left;
     }
 
     /* HERO */
