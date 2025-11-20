@@ -18,7 +18,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    text-align: right;
+    text-align: center;
 }
 
 .navbar ul {
@@ -126,6 +126,12 @@ body {
 }
 
 /* CONTACTS */
+.contact {
+    background: black;
+}
+.contact h2 {
+    color: skyblue;
+}
 .contact-box {
     margin-top: 40px;
     display: flex;
@@ -142,7 +148,7 @@ body {
 .contact-item h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #444;
+    color: skyblue;
 }
 
 .social a {
@@ -156,7 +162,7 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    color: #666;
+    color:skyblue;
     font-size: 14px;
 }
 
