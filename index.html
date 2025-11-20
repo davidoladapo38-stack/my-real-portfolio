@@ -16,8 +16,9 @@
     <header class="hero">
         <nav class="navbar">
             <div class="logo">OLADAPO</div>
-            <div class="menu-icon" id="menu-icon">☰</div>
-            <ul class="nav-links">
+            <div class="menu-icon" id="menu-icon" aria-expanded="false" aria-controls="navLinks"
+            aria-label="Toggle navigation">☰</div>
+            <ul id="nav-links" class="nav-links">
                 <li><a href="#about">About me</a></li>
                 <li><a href="#skills">My skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -138,6 +139,7 @@
 
     <a href="#" class="back-to-top">▲</a>
     <script>
+
         const menuIcon = 
         document.getElementById("menu-icon");
         const navLinks = 
