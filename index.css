@@ -15,12 +15,16 @@ body {
 .navbar {
     width: 100%;
     padding:15px 30px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
+    z-index: 9999;
+    background: rgb(195, 223, 235);
+    color: white;
+
 
 }
 .logo{
@@ -259,7 +263,7 @@ h1 {
 
     /* NAVBAR */
     .nav-links {
-        position: absolute;
+        position: fixed;
         text-align: center;
         background: rgba(0, 0, 0, 0.4);
         padding: 20px ;
