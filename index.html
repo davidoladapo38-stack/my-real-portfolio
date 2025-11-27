@@ -17,11 +17,11 @@
         <nav class="navbar">
             <div class="logo">OLADAPO</div>
             <div class="menu-icon" id="menu-icon" aria-expanded="false" aria-controls="navLinks"
-            aria-label="Toggle navigation">☰</div>
+                aria-label="Toggle navigation">☰</div>
             <ul id="nav-links" class="nav-links">
                 <li><a href="#about">About me</a></li>
                 <li><a href="#skills">My skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#contact">Contacts</a></li>
             </ul>
         </nav>
@@ -62,77 +62,85 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
+    <section id="projects" class="section" data-aos="fade-up">
+        <h2 class="title">MY PROJECTS</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="asset/port1.jpg" alt="">
+                <h3>E-commerce websites</h3>
+                <p>responsive modern e-commerce UI built with HTML, CSS, and JAVASCRIPT.
+                </p>
+                <a href="#" class="btn-small">Live Demo</a>
+                <!-- <a href="#" class="btn-outline">GitHub</a> -->
+            </div>
 
-        <div class="portfolio-grid">
-            <img src="asset/port4.jpg" alt="">
-            <img src="asset/port3.jpg" alt="">
-            <img src="asset/port2.jpg" alt="">
-            <img src="asset/port1.jpg" alt="">
+            <div class="project-card">
+                <img src="asset/port2.jpg" alt="">
+                <h3>E-commerce websites</h3>
+                <p>responsive modern e-commerce UI built with HTML, CSS, and JAVASCRIPT.
+                </p>
+                <a href="#" class="btn-small">Live Demo</a>
+                <!-- <a href="#" class="btn-outline">GitHub</a> -->
+            </div>
+            <div class="project-card">
+                <img src="asset/port3.jpg" alt="">
+                <h3>E-commerce websites</h3>
+                <p>High-coverting product landing page with smooth UI and interactive section.
+                </p>
+                <a href="#" class="btn-small">Live Demo</a>
+                <!-- <a href="#" class="btn-outline">GitHub</a> -->
+            </div>
         </div>
+
+     
+
+    </section> 
+   
+
     </section>
-    <div id="portfolio" class="portfolio">
-        <h1>Service we're offering to customer </h1>
-    </div>
-    <section class="portfolio-grid">
-
-        <div class="d">
-            <!-- <i class="fas fa-lightbulb"></i> -->
-            <h2>Web Designing</h2>
-            <p>our design service start and
-                ends with a best-in-class Experience strategy </p>
-        </div>
-        <div class="a">
-            <!-- <i class="fa-solid fa-comment"></i> -->
-            <h2>UI/ux Designing</h2>
-            <p>We'll work with you to develop more flexible,
-                autonomous UI/UX that drive more meaningful, successful
-                outcomes</p>
-        </div>
-        <div class="b">
-            <!-- <i class="fa-solid fa-bell"></i> -->
-            <h2>Web Application </h2>
-            <p>our dedication and commitment to excellence
-                ensure that your business thrives in the ever-evolving
-                digital realm. </p>
-        </div>
-        <div class="c">
-            <!-- <i class="fa-solid fa-user"></i> -->
-            <h2>Web marketing </h2>
-            <p>We immerse ourselves in your issues and
-                we put knowledge and expertise at your service.</p>
-        </div>
-    </section>
-
+    <section id="contact" class="sectio">
+        <h2 class="title">CONTACT ME </h2>
+        <form action="" class="contact-form" data-aos="fade-up">
+            <input type="text" name="" id="" placeholder="your name" required>
+            <input type="email" name="" id="" placeholder="Email Address" required>
+            <textarea rows="5" id="" placeholder="Your Message"></textarea>
+            <button class="btn">send Message</button>
+        </form>
     </section>
 
     <!-- CONTACTS -->
-    <section id="contact" class="contact">
-        <h2>Contacts</h2>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Let's work together!</p>
 
-        <div class="contact-box">
-            <div class="contact-item">
-                <h3>E-mail</h3>
-                <p><a href="mailto:davidoladapo38@gmail.com">davidoladapo38@gmail.com</a></p>
-            </div>
+        <div class="contact-container">
 
-            <div class="contact-item">
-                <h3>Telephone number</h3>
-                <p><a href="https://wa.me/qr/3OZC4TSEPC7PC1">+234 70 6474 64 11</a></p>
-            </div>
+            <!-- Phone -->
+            <a href="tel:+2347064746411" class="contact-item">
+                <i class="bi bi-telephone"></i>
+                <span>+234 706 474 6411</span>
+            </a>
 
-            <div class="contact-item">
-                <h3>Social media</h3>
-                <div class="social">
-                    <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                    <a href="https://www.instagram.com/oladapo3845/"> Instagram</a>
-                </div>
-            </div>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/2347064746411" target="_blank" class="contact-item">
+                <i class="bi bi-whatsapp"></i>
+                <span>Chat on WhatsApp</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:davidoladapso38@gmail.com" class="contact-item">
+                <i class="bi bi-envelope-arrow-up"></i>
+                <span>Email Address</spanco>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/oladapo3845" target="_blank" class="contact-item">
+                <i class="bi bi-instagram"></i>
+                <span>INSTAGRAM</span>
+            </a>
+
         </div>
     </section>
-    <!-- <div class="contact"> <i class="bi bi-whatsapp"></i></div> -->
-
     <footer>
         <p>Copyright © 2025 David Oladapo</p>
     </footer>
@@ -140,11 +148,11 @@
     <a href="#" class="back-to-top">▲</a>
     <script>
 
-        const menuIcon = 
-        document.getElementById("menu-icon");
-        const navLinks = 
-        document.getElementById("nav-links");
-        
+        const menuIcon =
+            document.getElementById("menu-icon");
+        const navLinks =
+            document.getElementById("nav-links");
+
         menuIcon.onclick = () => {
             navLinks.classList.toggle('active');
         };
