@@ -329,6 +329,10 @@ footer {
         transition: 0.3s ease;
 
     }
+    body{
+        background-color: #0f0f0f;
+        color: white;
+    }
 
     .nav-links.active {
         right: 10px;
